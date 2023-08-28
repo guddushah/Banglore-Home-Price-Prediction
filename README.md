@@ -36,9 +36,7 @@
 9> Running the server.py
   - python3 /home/ubuntu/Regression/server/server.py
 
-Running the url- ec2-13-48-42-94.eu-north-1.compute.amazonaws.com
-  - ![Result](https://github.com/guddushah/Banglore-Home-Price-Prediction/assets/40028193/9d1c5de1-1dd9-456e-b6b7-1cedbf1db68e)
-
+ec2-13-48-42-94.eu-north-1.compute.amazonaws.com is the url where we can predict the prices of home in Bangalore
 
 
 
