@@ -7,8 +7,10 @@ Third component is the website built in html, css and javascript that allows use
 
 ### Deploying in EC2 Instance of AWS Cloud
 1> Createing an EC2 instance using amazon console, also in security group add a rule to allow HTTP incoming traffic.
+
 2> Connecting with the EC2 Instance using the following commands in Git Bash
   - ssh -i "Banglore_Home_Price.pem" ubuntu@ec2-13-48-42-94.eu-north-1.compute.amazonaws.com
+  - 
 3> Installing nginx server in EC2 Instance using
   - sudo apt-get update
   - sudo apt-get install nginx
