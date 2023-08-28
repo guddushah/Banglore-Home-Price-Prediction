@@ -25,6 +25,7 @@
              rewrite ^/api(.*) $1 break;
              proxy_pass http://127.0.0.1:5000;
         }
+
   }
 6> Creating symlink for bhp.conf file in /etc/nginx/sites-enabled
   - sudo ln -v -s /etc/nginx/sites-available/bhp.conf
@@ -37,6 +38,8 @@
   - python3 /home/ubuntu/Regression/server/server.py
 
 ec2-13-48-42-94.eu-north-1.compute.amazonaws.com is the url where we can predict the prices of home in Bangalore
+![Result](https://github.com/guddushah/Banglore-Home-Price-Prediction/assets/40028193/36015fba-e7a8-44c2-b651-b63275d17f19)
+
 
 
 
