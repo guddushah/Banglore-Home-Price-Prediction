@@ -7,14 +7,18 @@
 
 ### Deploying in EC2 Instance of AWS Cloud
 1> Createing an EC2 instance using amazon console, also in security group add a rule to allow HTTP incoming traffic.
+
 2> Connecting with the EC2 Instance using the following commands in Git Bash
-  - ssh -i "Banglore_Home_Price.pem" ubuntu@ec2-13-48-42-94.eu-north-1.compute.amazonaws.com   
+  - ssh -i "Banglore_Home_Price.pem" ubuntu@ec2-13-48-42-94.eu-north-1.compute.amazonaws.com
+  - 
 3> Installing nginx server in EC2 Instance using
   - sudo apt-get update
   - sudo apt-get install nginx
+  - 
 4> Checking the status of nginx
   - sudo service nginx start
   - sudo service nginx status
+  - 
 5> Creating file /etc/nginx/sites-available/bhp.conf
   - server {
     listen 80;
@@ -27,13 +31,17 @@
         }
 
   }
+  
 6> Creating symlink for bhp.conf file in /etc/nginx/sites-enabled
   - sudo ln -v -s /etc/nginx/sites-available/bhp.conf
+  - 
 7> Restaring nginx
   - sudo service nginx restart
+  - 
 8> Installing pip3 and requirements in EC2 Instance
   - sudo apt-get install python3-pip
   - sudo pip3 install -r /home/ubuntu/Regression/requirements.txt
+  - 
 9> Running the server.py
   - python3 /home/ubuntu/Regression/server/server.py
 
